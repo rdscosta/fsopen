@@ -53,6 +53,8 @@ sequenceDiagram
     server-->>browser: HTML document
     deactivate server
 
+    Note left of server: The SPA sends a single HTML document to the browser.
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
     server-->>browser: the CSS file
